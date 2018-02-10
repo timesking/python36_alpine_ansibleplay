@@ -14,7 +14,7 @@ I just merged some codes from:
 You can run it by:
 
 ```
-# docker run --rm -it -v $(pwd):/ansible/playbooks philm/ansible_playbook site.yml
+# docker run --rm -it -v $(pwd):/ansible/playbooks timesking/ansible_playbook site.yml
 ```
 
 Or if you require some special ssh key for ansible playbook runnning:
@@ -23,5 +23,5 @@ docker run --rm -it \
     -v ~/.ssh/id_rsa:/root/.ssh/id_rsa \
     -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub \
     -v $(pwd):/ansible/playbooks \
-    philm/ansible_playbook site.yml
+    timesking/ansible_playbook site.yml
 ```
